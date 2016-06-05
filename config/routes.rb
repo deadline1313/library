@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  #changed to root because tutorial provided code delivers routing errors
+  root 'book#list'
+  get 'book/new'
+  #check updates on rails because it seems that the controller should be singular compared to the tutorial code which uses plural
+  post 'books/create'
+  patch 'books/update'
+  get 'books/list'
+  get 'books/show'
+  get 'books/edit'
+  get 'books/delete'
+  get 'books/update'
+  get 'books/show_subjects'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
